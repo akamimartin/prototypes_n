@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function myMessage() {
+            console.log("this is from function myMessage");
+            return;
+        }
+
+        function add(x, y) {
+            console.log('This is the return for function add ' + x + '+' + y + '=' + (x + y));
+            return x + y;
+        }
+
+
+        function greeting(x, y) {
+            console.log('Hello, ' + x + ' you are ' + 4 + ' years old');
+        }
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <button onclick="myMessage()">button - myMessage</button>
+
+
+    <button onclick="add(3, 4)">button - add</button>
+
+
+    <button onclick="greeting('Janet', 4)">button - add</button>
+
+
+
+
+</body>
+
+
+
+</html>
