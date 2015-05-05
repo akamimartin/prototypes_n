@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<style>
+    <!DOCTYPE html> <html> <head> <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</style>
+</head>
+
+<body>
+    <script>
+        var classschedule = ["HTML", "CSS", "Javascript"];
+        var student = {};
+        student.firstName = "Janet";
+        student.lastName = "Martin";
+        student.age = 1200;
+        student.school = "LearningFuze";
+        student.classlist = ["Perris", "Mike", "Jordan"];
+        student.greeting = function () {
+            return "Hello, my name is " + this.firstName + " " + this.lastName;
+        };
+        student.aboutMe = function () {
+            return "My full name is " + this.firstName + " " + this.lastName + " , " +
+                "I am " + this.age + " and I am a student at " + this.school;
+        };
+        student.myClasses = function () {
+            return "I am taking the following classes:  " + classschedule[0] + " and " + classschedule[1] + " and " + classschedule[2];
+        };
+
+
+        var animals = ["Boxer", "French Bull", "English Bull", "Pomeranian"];
+
+        console.log('I love my', animals[0] + ' and my', animals[1]);
+
+
+        console.log("Greeting function: ", student.greeting());
+        console.log("aboutMe function: ", student.aboutMe());
+        console.log("myClasses function: ", student.myClasses());
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

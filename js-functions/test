@@ -1,0 +1,60 @@
+<!DOCTYPE html>
++<html>
++<head>
++    
++    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
++    <style>
++        .card_container{
++            position: relative;
++            display: inline-block;
++            background-color: red;
++            height: 150px;
++            width: 110px;
++        }
++        .card{
++            height: 150px;
++            position: absolute;
++            left: 0px;
++            top: 0px;
++        }
++        .card-front{
++            width: 110px;
++        }
++        .card-hidden{
++            display: none;
++        }
++    </style>
++    <script>
++        var my_card = null;
++    </script>
++</head>
++<body>
++    <div class="content">
++        <div class="game_area">
++            <div class="card_row">
++                <div class="card_container" id="card_container1">
++                    <img src="images/british_flag.jpg" class="card card-front" id="card_front1" data-card="british flag">
++                    <img src="images/card_design.png" class="card card-back" id="card_back1" 
++                    onclick="
++                        if(my_card==null)
++                        {
++                            console.log('first card was clicked, on card1, it was '+$('#card_front1').attr('data-card'));
++                            //do stuff for 1st click
++                        }
++                        else 
++                        {
++                            console.log('second card was clicked, it was card 1, it was '+$('#card_front1').attr('data-card'));
++                            //do stuff for 2nd click
++                        }
++                    "
++                    >
++                </div>
++
++            </div>
++        </div>
++    </div>
++</body>
++<script>
++</script>
++</html>
++
