@@ -39,12 +39,42 @@
 </style>
 <script>
 $(document).ready(function()
-{
+{    
 	//playground 1 code
+	var h1 = $('<h1>').text("I am a heading");
+    $("#playground1").append(h1);
+	var p1 = $('<p>').text("This is an awesome paragraph");
+    $("#playground1").append(p1);
+    var p2 = $('<p style="color:red">').text("This has red text");
+    $("#playground1").append(p2);
 
 	//playground 2 code
 
+	var div1  = $('<div>').addClass('awesome_class').text('Here is some awesome div text');
+    var div2  = $("<div id='my_awesome_div2'>").addClass('awesome_class').text('HHere is MORE awesome div text');
+    var div3  = $("<div id='my_awesome_div3' data-coolness='high'>").addClass('awesome_class').text('Here is <strong>EVEN MORE</strong> awesome div text');
+    $("#playground2").append(div1, div2, div3);
+
 	//playground 3 code
+
+
+ var div4  = $('<ul>').addClass('neato'); 
+ var li1 = $('<li>').text("Link 1");
+ var li2 = $('<li>').text("Link 2");
+ var li3 = $('<li>').text("Link 3");
+ $(div4).append(li1, li2, li3);
+ 
+ 
+ var fig1 = $('<figure>').addClass('awesome_picture'); 
+ var img1 = $('<img>').attr("src", "http://comerecommended.com/wp-content/uploads/2013/01/how-to-get-awesome-back.jpg");
+ var figc = $('<figcaption>').text('Thats right, ');
+ var spanv =$('<span>').addClass("bold_text").text("you are");	
+   
+  (fig1).append(img1, figc, spanv);
+ $("#playground3").append(div4 , fig1); 
+ 
+ 
+
 });
 </script>
 </head>
@@ -55,9 +85,11 @@ $(document).ready(function()
 		<p style="color:red">This has red text</p>
 	</div>
 	<div class="playground playground_destination" id="playground1">
-		<!--copy code into here using jQuery ONLY-->
+	  <!--put code here -->
+
+
 	</div>
-	<div class="playground playground_source">
+	 <div class="playground playground_source">
 		<div class='awesome_class'>
 			Here is some awesome div text
 		</div>
@@ -67,10 +99,16 @@ $(document).ready(function()
 		<div class='awesome_class' id='my_awesome_div3' data-coolness='high'>
 			Here is <strong>EVEN MORE</strong> awesome div text
 		</div>
-	</div>
+	</div> -->
 	<div class="playground playground_destination" id="playground2">
-		<!--copy code into here using jQuery ONLY-->
+		<!--copy code into here using jQuery ONLY -->
+
 	</div>
+
+
+
+
+
 	<div class="playground playground_source">
 		<ul class="neato">
 			<li>Link 1</li>
