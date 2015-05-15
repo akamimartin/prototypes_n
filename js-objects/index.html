@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <script>
+        /*Prototype 1, 2, 3, 4 all in one*/
+        var student_object = {
+            name: "Jasmin Smith",
+            grade: 98
+        }
+
+        var student_array = [];
+
+        function add_students() {
+
+            student_array.push(student_object);
+            var student_name = prompt("Please enter your name");
+            var student_grade = prompt("Please enter your grade");
+            var new_student = {}
+
+            new_student.name = student_name;
+            new_student.grade = student_grade;
+            student_array.push(new_student); 
+          }
+
+        function delete_student() {
+            var student_id = prompt("Please enter the id of student you want to delete.");
+            for (var i = 0; i < student_array.length; i++) {
+              if (student_id == i) {
+                    var delete_student = $('<div id= "delete-student-board" class="col-sm-12">').text(i + ") " + student_array[i].name + " is being deleted ");
+                    student_array.splice(i, 1);
+                }
+                $("#delete-student-board.append").append(delete_student);
+                $('#students-board').append(delete_student);
+
+            }
+            student.array.length = 0; 
+            list_students();
+        }
+
+
+        function list_students() {
+             
+            $(".student-container").text("");
+            $(".students-board").text("");
+
+            for (var i = 0; i < student_array.length; i++) {
+                var student_container = $('<div>').addClass('student_container');
+                var name_output = $('<div class="col - sm - 6 ">').text(i + ")" + student_array[i].name);
+                var grade_output = $('<div class="col - sm - 6 ">').text(student_array[i].grade);
+                student_container.append(name_output, grade_output);
+                $('#students-board').append(student_container);
+
+            }
+                
+
+        }
+    </script>
+
+    <div id="students-board" class="col-sm-12">
+        <div class="square1 col-sm-3 col-sm-offset-1"></div>
+        <div class="square2 col-sm-3 col-sm-offset-1"></div>
+        <div class="square3 col-sm-3 col-sm-offset-1"></div>
+    </div>
+    </div>
+
+
+    <button onclick="list_students()">Refresh Student Data</button>
+    <button onclick="add_students()">Add Student Data</button>
+    <button onclick="delete_student()">Delete Student Data</button>
+
+
+
+</body>
+
+</html>
