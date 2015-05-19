@@ -24,13 +24,13 @@
 
             new_student.name = student_name;
             new_student.grade = student_grade;
-            student_array.push(new_student); 
-          }
+            student_array.push(new_student);
+        }
 
         function delete_student() {
             var student_id = prompt("Please enter the id of student you want to delete.");
             for (var i = 0; i < student_array.length; i++) {
-              if (student_id == i) {
+                if (student_id == i) {
                     var delete_student = $('<div id= "delete-student-board" class="col-sm-12">').text(i + ") " + student_array[i].name + " is being deleted ");
                     student_array.splice(i, 1);
                 }
@@ -38,13 +38,13 @@
                 $('#students-board').append(delete_student);
 
             }
-            student.array.length = 0; 
+            student.array.length = 0;
             list_students();
         }
 
 
         function list_students() {
-             
+
             $(".student-container").text("");
             $(".students-board").text("");
 
@@ -56,7 +56,7 @@
                 $('#students-board').append(student_container);
 
             }
-                
+
 
         }
     </script>
