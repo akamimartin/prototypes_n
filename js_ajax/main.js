@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var global_response
 
 $(document).ready(function() {
