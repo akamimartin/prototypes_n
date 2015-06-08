@@ -17,12 +17,13 @@ $result = $numbers[0];
 for($i = 1; $i < count( $numbers); $i++)
 {
     $result += $numbers[$i];
-}
-echo “Result = “.$result;
-
+ 
+  
+echo "Result = " . " $result";
+};
 //EXERCISE 4 
 
-print(“This is a string” . “This is another string”);
+//print(“This is a string"." This is another string”);
 
 //EXERCISE 5
 
@@ -42,11 +43,11 @@ $my_int2 = intval($my_float2);
 
 $my_var1 = “Hello”;
 if(isset($my_var2){
-    echo $my_var2;
+    echo" $my_var2";
 }
 else
 {
-    echo $my_var1;
+    echo "$my_var1";
 }
 
 //EXERCISE 7

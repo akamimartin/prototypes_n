@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://fiddle.jshell.net/_display/# -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Bootstrap Collapse with list group - jsFiddle demo</title>
+  
+  <script type="text/javascript" src="jquery-2.0.2.js"></script>
+  
+  
+  
+  
+  <link rel="stylesheet" type="text/css" href="result-light.css">
+  
+    
+      <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    
+  
+    
+      <script type="text/javascript" src="bootstrap.min.js"></script>
+    
+  
+  <style type="text/css">
+    body {
+    padding: 2em;
+}
+
+.panel-group .list-group {
+	margin-bottom: 0;
+}
+
+.panel-group .list-group .list-group-item {
+	border-radius: 0;
+	border-left: none;
+	border-right: none;
+    height: 45px;
+    background-color: white;
+    
+
+    
+}
+
+.panel-group .list-group .list-group-item:last-child {
+	border-bottom: none;
+    
+    
+}
+ #title_LI {
+
+    width: 890px;
+    height: 45px;
+	border-radius:  10px;
+    border: 1px solid white;
+
+}
+
+ #detail_LI {
+
+    width: 890px;
+    height: 55px;
+	border-radius:  10px;
+    border: 1px solid white;
+    background-color: white;
+
+}
+
+.input-list {
+    width: 890px;
+    height: 45px;
+	border-radius:  10px;
+    border: 1px solid white;
+    
+}
+}
+
+
+
+#btn2 {
+    
+ width: 50px;
+    height:
+}
+input {
+    color: gray;
+    style: italics;
+}
+}
+ 
+     
+
+  </style>
+  
+
+
+<script type="text/javascript">//<![CDATA[ 
+$(window).load(function(){
+<script>
+$(document).ready(function(){
+  $("#input-btn").on("hide.bs.collapse", function(){
+    $(".btn").html( 'more');
+  });
+  $("#input-btn").on("show.bs.collapse", function(){
+    $(".btn").html('less');
+  });
+});
+</script>
+</head><body>});//]]&gt;  
+
+
+
+
+
+
+  <h1>Bootstrap Collapse with list group</h1>
+<div class="panel-group" id="accordionTwo">
+	<div class="panel panel-default">
+		<div class="panel-heading">
+			<h4 class="panel-title">
+				<a class="accordion-toggle list-group collapsed" data-toggle="collapse" data-parent="#accordionTwo" href="http://fiddle.jshell.net/_display/#collapseFour"><input class="btn.bottom" id="title_LI" placeholder="Add new title"> </a> 
+			</h4>
+		</div>
+		<div class="panel-collapse collapse" id="collapseFour" style="height: 0px;">
+			<div class="list-group">
+                <a href="saved_resource.html" class="list-group-item input-list"><input class="" id="title_LI" placeholder="Add detail"><span class="badge">1</span></a>
+				<a href="saved_resource.html" class="list-group-item"><input class="" id="title_LI" placeholder="Add date"><span class="badge">1</span></a>
+  
+           
+			</div>
+               
+		</div>
+	</div>
+                    <a class="accordion-toggle list-group collapsed" data-toggle="collapse" data-parent="#accordionTwo" href="http://fiddle.jshell.net/_display/#collapseFour"> <button type="button" class="btn  btn-info btn-xs active pull-right" id="btn2">
+            <span class="more-btn"></span> more
+            </button></a>
+</div>
+
+            
+            
+  
+
+
+
+
+
+</body></html>

@@ -1,5 +1,6 @@
 //EXERCISE 1
 
+
 variable1 = “hello”;
 variable2 = 4;
 variable3 = [‘foo’, ‘bar’];

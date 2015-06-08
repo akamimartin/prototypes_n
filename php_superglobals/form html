@@ -1,0 +1,22 @@
+ 
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action=" index.php" method = "get">
+First name:<br>
+<input type="text" name="name" value="name"   >
+<br>
+Last name:<br>
+<input type="text" name="id" value="my_name">
+ 
+<br><br>
+<input type="submit" value="Submit">
+
+
+</form> 
+
+ 
+
+</body>
+</html>
