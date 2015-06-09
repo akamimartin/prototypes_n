@@ -12,6 +12,9 @@
 		- dataType: 'text'
 		- success: inform user if they successfully logged in or not
 			- Check response for the word "true" or "false"
+
+
+			
 - Create a new file, login_handler.php
 	- Create a nested associative array: $user_info
 	- 
