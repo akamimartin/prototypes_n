@@ -23,3 +23,4 @@
 		- make sure that you do not print anything before calling header or it won't work
 - in session_setter.php
 	- underneath each input, print the corresponding error message IF IT IS SET
+m
