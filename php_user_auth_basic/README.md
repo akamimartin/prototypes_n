@@ -15,13 +15,11 @@
 - Create a new file, login_handler.php
 	- Create a nested associative array: $user_info
 	- 
-		```
-		<pre>
+
 		$user_info = [
 			['id'=> 0, 'username'=>'dpaschal', 'password' => 'fluffybunnies']
 		];
-		</pre>
-		```
+
 		
 	- get the data you received from your login_form.php
 	- loop through the array till you find a matching username. 
@@ -57,10 +55,9 @@
 		- // outputs 2beb0192eb1ca5a8756bc89a09b93036e1854049
 - in login_handler.php
 	- update the password in your $user_info array
-		```
-		<pre>
+	- 
+
 		$user_info = [
 			['id'=> 0, 'username'=>'dpaschal', 'password' => '2beb0192eb1ca5a8756bc89a09b93036e1854049']
 		];
-		</pre>
-		```
+
