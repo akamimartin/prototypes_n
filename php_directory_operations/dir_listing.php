@@ -11,33 +11,7 @@
     <title></title>
 </head>
 <body>
- <script>
-
  
- $(#image_container').html()
-
-      var details = $("<li>", {
-            class: 'to_do_details list-group-item',
-            text: "Details: " + todo_items_array[i].details,
-        });
-
-<div id="image_container">
-<h1>Prints all the directories</h1>
- <img src="pic_mountain.jpg"  
-  //     style="width:304px;height:228px;">
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 <?php 
@@ -54,8 +28,10 @@ $pictures = glob("images/*.jpg");
      
     }; 
 echo json_encode($output);
+
+
 ?>
- 
+
 
 
  

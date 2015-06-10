@@ -37,9 +37,6 @@ function login_function() {
             cache: false,
             crossDomain: true,
             success: function(response) {
-            	   window.response = response;
-                 
-               
             	console.log("inside ajax success");
             	
                 window.response = response;
