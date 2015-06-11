@@ -28,6 +28,7 @@
 	- run your index._select.php to see what the new data
 
 ## Prototype 4
+aribitary userid
 - create a new page, form.php, 
 	- with the necessary fields for your todo item table
 		- title

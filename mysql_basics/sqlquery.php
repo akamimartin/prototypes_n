@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","","myfirst_db");
+$conn=mysqli_connect("localhost","root","","myfirst_db");
 
 mysqli_query(link,query)
 $query = "SELECT * FROM todo_items";
@@ -10,6 +10,13 @@ $rows = mysqli_query($con, $query);
           $output['title'] = $row['title'];
           $output['details'] = $row['details'];
           $output['userId'] = $row['user_id'];
+           print_r($output);
+
+
+
+
+
+
       }
     
 }
