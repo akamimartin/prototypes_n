@@ -12,6 +12,22 @@
 </head>
 <body>
 
+ 
+  <div id="image-container">
+  <?php
+     $images = glob('images/*.jpg');
+     print_r($images);
+     foreach($images as $key=$value) {
+         echo"key = $key <br>";
+         echo "file name = $images[$key] <br>";
+         echo"file name ="$value <br>";
+         echo "<img scr="$value" height:"200" width="400">";
+          
+     }
+     ?> 
+ </div>
+scott
+---------------------------------------
 
 
 

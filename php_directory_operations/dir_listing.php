@@ -1,3 +1,112 @@
+
+
+ <div id="image-container">
+  <?php
+     $images = glob('images/*.jpg');
+     print_r($images);
+     foreach($images as $key=$value) {
+         echo"key = $key <br>";
+         echo "file name = $images[$key] <br>";
+         echo"file name ="$value <br>";
+         echo "<img scr="$value" height:"200" width="400">";
+          
+     }
+     ?> 
+ </div>
+
+
+--------------------scott
+
+ <?php
+
+ $output['success'] = false;
+ $dir = 'images/';
+
+ if(is_dir($dir)({
+     echo "$dir is a real directory" 
+     $images = glob("$dir*.jgp");
+
+     if(count($images)) {
+        echo"we have images";
+        $output["success"] = true;
+        $output["files"] = $images;
+     }else{
+
+       ["error"] = "unable to look up images";
+      
+       echo "we have no images";
+        $output['error'] = "unable to load image';
+
+ 
+    } else{
+         $output["error"] = "Directory
+        echo "$dir is not valid";
+     } 
+
+   print_r json_encode($output);
+
+{
+     ?>
+
+  $(document).ready(function() {
+
+
+
+
+
+
+
+  }
+
+
+function getimg() {
+
+    $ajax() 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------
+
+
 <!DOCTYPE HTML>
 <html> 
 <head>
