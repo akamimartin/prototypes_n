@@ -15,7 +15,8 @@ require('mysql_connect.php');
  echo $userid;
 
 
-$query = ("INSERT INTO `myfirst_db`.`todo_items` (`id`, `title`, `details`, `timestamp`, `user_id`) VALUES ($id, $title, $details, $timestamp, $userid)");
+$query = ("SELECT `id`, `title`, `details`, `timestamp`, `user_id` FROM `todo_items`"  );
+
 $rows = mysqli_query($conn,$query);
 
 /*$result = mysqli_query($conn, $query);*/
