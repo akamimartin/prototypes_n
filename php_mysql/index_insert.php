@@ -1,6 +1,12 @@
 <?PHP
+session_start();
 require('mysql_connect.php');
+ 
 
+$r=session_id();
+ 
+echo strlen($r); // outputs 12echo "the session id id: ".$r;
+echo "the session id id: ".$r;
 
  $id =  $_POST["id"];  
  $title =  $_POST["title"];  
@@ -15,7 +21,8 @@ require('mysql_connect.php');
  echo $userid;
 
 
-$query = ("INSERT INTO `myfirst_db`.`todo_items` (`id`, `title`, `details`, `timestamp`, `user_id`) VALUES ($id, $title, $details, $timestamp, $userid)");
+$query = ("INSERT INTO `myfirst_db`.`todo_items` (`id`, `title`, `details`, `timestamp`, `user_id`)
+     VALUES (PHPSESSID, $title, $details, $timestamp, $userid)");
 $rows = mysqli_query($conn,$query);
 
 /*$result = mysqli_query($conn, $query);*/

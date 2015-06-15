@@ -57,7 +57,8 @@ aribitary userid
 - in your index_insert.php file
 	- read the current user_id from your $_SESSION variable
 	- if it isn't set, don't proceed with the mysql statement
-		- exit() is a great way to stop php execution prematurely
-	- use the user id in your insert statement, rather than the previous hard-coded value
+		- exit() is a great way to stop php execution premature previous hard-coded valuely
+	- use the user id in your insert statement, rather than the
 
-
+-
+//`++++++++++++++++++++++++++++++++++++++++++++++++++
